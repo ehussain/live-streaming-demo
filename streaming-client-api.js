@@ -31,7 +31,7 @@ connectButton.onclick = async () => {
     method: 'POST',
     headers: {'Authorization': `Basic ${DID_API.key}`, 'Content-Type': 'application/json'},
     body: JSON.stringify({
-      source_url: "https://d-id-public-bucket.s3.amazonaws.com/or-roman.jpg"
+      source_url: "https://create-images-results.d-id.com/DefaultPresenters/Emma_f/image.jpeg"
     }),
   });
 
@@ -68,7 +68,7 @@ talkButton.onclick = async () => {
   talkTextButton.onclick = async () => {
   // connectionState not supported in firefox
   if (peerConnection?.signalingState === 'stable' || peerConnection?.iceConnectionState === 'connected') {
-    doTextTalking("WebRTC Text Message Delivered");
+    doTextTalking("Hi! I'm Anna! What's your name?");
   }};
 
   const helloTextButton = document.getElementById('hello-talk-button');
